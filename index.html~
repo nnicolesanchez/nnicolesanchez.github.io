@@ -119,6 +119,8 @@
 
 	  <p>
 	    <b>Research Interests:</b>
+	    <ul style="margin-top:-20px;">
+
 	    <li>Cosmological and zoom-in simulations of Milky Way-mass (MW) galaxies and their circumgalactic medium (CGM)</li>
 	    <li>Co-evolution of MW-mass galaxies, CGM, and supermassive black holes (SMBH)</li>
 	    <li>Galaxy regulation at low redshifts and quenching in MW-mass galaxies</li>

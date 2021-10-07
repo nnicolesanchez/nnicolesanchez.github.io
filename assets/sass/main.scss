@@ -5,7 +5,7 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic');
-@import url('fontawesome-all.min.css');
+@import url('font-awesome.min.css');
 
 /*
 	Astral by HTML5 UP
@@ -488,24 +488,16 @@
 /* Icons */
 
 	.icon {
-		@include icon;
 		position: relative;
 		text-decoration: none;
 
-		&.solid {
-			&:before {
-				font-weight: 900;
-			}
-		}
-
-		&.brands {
-			&:before {
-				font-family: 'Font Awesome 5 Brands';
-			}
-		}
-
 		&:before {
-			line-height: inherit;
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
 		}
 
 		> .label {

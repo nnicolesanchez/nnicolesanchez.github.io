@@ -10,18 +10,18 @@ menu_settings:
   menu_items:
     - title: 'Projects'
       url: '/'
-    - title: 'Blog'
+    - title: 'Research'
       url: '/blog/'
-    - title: 'About'
+    - title: 'CV'
       url: '/about'
-    - title: 'Contact'
+    - title: 'Personal'
       url: '/contact'
 
 footer_settings:
-  footer_tagline: A sleek, modern Jekyll theme for personal websites.
+  footer_tagline: nsanchez@carnegiescience.edu
 
 hero_settings:
-  overlay_opacity: 0.8
+  overlay_opacity: 0.2
 
 post_settings:
   grid_spacing: 10

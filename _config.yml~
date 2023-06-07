@@ -1,7 +1,7 @@
-site: Personal Jekyll Theme
+site: N. Nicole Sanchez's Website
 
-url: 
-baseurl: 
+url: https://nnicolesanchez.github.io
+baseurl: /project
 
 collections:
   pages:

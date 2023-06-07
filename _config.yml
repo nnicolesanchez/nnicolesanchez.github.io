@@ -1,7 +1,7 @@
 site: N. Nicole Sanchez's Website
 
 url: https://nnicolesanchez.github.io
-baseurl: /project
+baseurl: 
 
 collections:
   pages:

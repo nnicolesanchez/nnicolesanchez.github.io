@@ -1,51 +1,279 @@
----
-layout: default
-title: A sleek, modern Jekyll theme for personal websites.
-description: A sleek, modern Jekyll theme for personal websites. Personal is the perfect theme for developers, designers and other creatives.
-featured_image: /images/demo/home.jpg
----
+<!DOCTYPE HTML>
+<!--
+    Dimension by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <!-- This is the "Head" of the HTML document.
+       It contains information that isn't displayed on the actual page, but is useful
+       for the web browser when loading the page
+       -->
+  <head>
+    <!-- This is the title of the page. It is the text that appears inside this pages tab in your web browser -->
+    <title>Natalie Nicole Sanchez</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- This links to this page's CSS, which is contained in the folder assets/css and the file main.css.
+	  If you want to edit the styling of this page, you should edit the file assets/css/main.css
+	   If you have a new CSS file you'd like to add with custom styling, you should link to it here using:
+	    <link rel="stylesheet" href="assets/css/my-new-css-file.css"/> 
+	    -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- In the case that the user's browser does not support JavaScript (unlikely, but possible), the page
+	 will load a separate set of CSS stylings from the file assets/css/noscript.css
+	 Any HTML contained inside <noscript></noscript> tags will be loaded in the event that JavaScript is not
+	 available. 
+	 -->
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+  <!-- The body is the location where your site's content will go -->
+  <body class="is-preload">
 
-<section class="hero">
+    <!-- This "div" wraps around all of our content and just changes how things are layed out -->
+    <div id="wrapper">
 
-	<div class="hero__image" style="background-image: url({{ page.featured_image | relative_url }})">
-		<div class="hero__overlay"></div>
+      <!-- This is where the content that appears on page load exists -->
+      <header id="header">
+	<!-- This is the main content of the front page -->
+	<div class="content">
+	  <div class="inner">
+	    <!-- Here is a heading where you can put your name -->
+	    <h1>
+	      Natalie Nicole Sanchez
+	      </h1>
+	    <!-- Here is an image where you can put a picture of you. 
+		 You can change the width and height attributes below to change how large
+		 your image is.
+		 Try adding "border-radius: 50%;" to the style attribute.
+		 -->
+	    <img src="images/profile_photo.jpeg" style="width:280px; height:280px; object-fit: cover;">
+	    <!-- Here is a paragraph where you can put your position and institution, or
+		 a short line about yourself.
+		 -->
+	    <p>
+	      NSF MPS-Ascend Postdoctoral Fellow <br> Caltech & Carnegie Observatories, Pasadena
+	      </p>
+	    <!-- Here is a paragraph where you can put a link to your CV -->
+	    <p>
+	      <!-- Note you will want to change where this points to! -->
+	      <a href="images/NNSanchez_CV_july2021_v3.pdf" target="_blank">Curriculum Vitae</a>
+	      </p>
+	    </div>
+	  </div>
+	<!-- This is the navigation menu -->
+	<nav>
+	  <!-- This element makes an "Unordered List" -->
+	  <ul>
+	    <!-- This is a "List Item" -->
+	    <li>
+	      <!-- Note that this links to #about, which will move the page to wherever
+		   the element with the id "about" exists.
+		   -->
+	      <a href="#about">About Me</a>
+	      </li>
+	    <li>
+	      <a href="#research">Research</a>
+	      </li>
+	    <li>
+	      <a href="#community">Community</a>
+	      </li>
+	    <li>
+	      <a href="#contact">Contact</a>
+	      </li>
+	    <!-- You can add another button to your navigation menu by adding
+		 another List Item with a link inside of it.
+		 -->
+	    <!-- <li>
+		 <a href="images/Astronomy.jpg">My CV</a>
+		 </li> -->
+	    </ul>
+	  </nav>
+	</header>
+
+      <!-- These are the "cards" that appear when you click the buttons on the main page -->
+      <div id="main">
+	<!-- Here is the "About Me" card. Note it has the id "about", which the previous 
+	     button links to.
+	     -->
+	<article id="about">
+	  <h2 class="major">About Me</h2>
+	  <!-- Here is an image that you can customize for this page -->
+	  <span class="image main">
+	    <img src="images/aboutme.jpg" alt=""/>
+	    </span>
+	  <!-- Here are three paragraphs where you can fill out information about yourself -->
+	  <p>
+	    <!-- Items contained in <b> tags are bolded! -->
+	      Natalie “Nicole” Sanchez is a finishing PhD candidate at the University of Washington. She is a member of the UW Nbody Shop and uses cosmological simulations of galaxies to better understand galactic evolution. With her advisor, Professor Jessica Werk, Nicole is particularly interested in understanding the mechanisms which drive the metal enrichment of the circumgalactic medium, especially the effects of supermassive black hole feedback. Nicole will be defending her PhD next summer and is currently applying to Postdoc positions. When not busy with research, Nicole is the lead singer of Seattle’s premiere (and only) all-astronomer rock band, Night Lunch. <br>
+	    
+	    <b>Education:</b><br>
+	    PhD Astronomy, <i>intended 2022</i> <br>
+	    MSci AStronomy 2018, University of Washington, Seattle <br>
+	    <a herf="https://depts.washington.edu/astron/profile/sanchez-nicole/">NASA FINESST Researcher</a><br>
+	    <br>
+	    MA Physics 2016, Fisk University <br>
+	    <a href="https://www.fisk-vanderbilt-bridge.org/nicole-sanchez">Fisk-Vanderbilt Masters-to-PhD Bridge Program Alumna</a> <br>
+	    <br>
+	    BSci Physics 2014, California Polytechnic University, Pomona<br>
+	    <a href="https://www.cpp.edu/sci/physics-astronomy/people/students/nicole-sanchez.shtml">CAMPARE Program Alumna</a>
+	    </p>
+
+	  <p>
+	    <b>Research Interests:</b>
+	    <ul style="margin-top:-30px;">
+
+	    <li>Cosmological and zoom-in simulations of Milky Way-mass (MW) galaxies and their circumgalactic medium (CGM)</li>
+	    <li>Co-evolution of MW-mass galaxies, CGM, and supermassive black holes (SMBH)</li>
+	    <li>Galaxy regulation at low redshifts and quenching in MW-mass galaxies</li>
+	    <li>Theoretical and Observational comparisons of CGM gas properties and dynamics</li>
+	    <li>Metal retention and flow in MW-mass galaxies; Synthetic observations in simulations</li>
+	    </p>
+
+	  <p>
+	    <b>Publications:</b> <br>
+	    <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...911..116S/abstract">One-Two Quench:</a> A Double Minor Merger Scenario <br>
+	    <b>N. Nicole Sanchez</b>, Michael Tremmel, Jessica K. Werk, Andrew Pontzen, Charlotte Christensen, Thomas Quinn, Sarah Loebman, Akaxia Cruz, 2021ApJ, 911, 116S. April 2021 <br>
+	    <br>
+
+	    <a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...882....8S/abstract">Not So Heavy Metals:</a> Black Holes Feedback Enriches the Circumgalactic Medium <br>
+	    <b>N. Nicole Sanchez</b>, Jessica K. Werk, Michael Tremmel, Andrew Pontzen, Charlotte Christensen, Thomas Quinn, Akaxia Cruz, 2019ApJ, 882, 8S. September 2019<br>
+	    <br>
+
+	    <a href="https://ui.adsabs.harvard.edu/abs/2018ApJ...860...20S/abstract">Cosmological Hydrodynamic Simulations of Preferential Accretion in the SMBH of Milky Way Size Galaxies</a> <br>
+	    <b>N. Nicole Sanchez</b>, Jillian M. Bellovary, Kelly Holley-Bockelmann, Michael Tremmel, Alyson Brooks, Fabio Governato, Tom Quinn, Marta Volonteri, James Wadsley, 2018ApJ, 860, 20S. June 2018<br>
+
+	    </p>
+	  </article>
+
+	<!-- Here is the "Research" card. -->
+	<article id="research">
+	  <h2 class="major">Research</h2>
+	  <span class="image main">
+	    <img src="images/pic02.jpg" alt=""/>
+	    </span>
+	  <p>
+	    <!-- A <br> tag puts in a break so that the text that follows it displays on
+		 the next line.
+		 -->
+	    <b>The Scatter Matters (in prep):</b><br>Measuring the metal retention in L* galaxies within the Romulus25 cosmological volume.
+	    </p>
+	  <p>
+	    <b><a href='https://ui.adsabs.harvard.edu/abs/2021ApJ...911..116S/abstract'>One-Two Quench:</a></b><br>Connecting supermassive black hole feedback and minor satellite mergers to quenching in Milky Way-mass galaxies.
+	  </p>
+	  <b>Not So Heavy Metals:</b><br>Using zoom-in simulation comparisons to observed OVI column densities (COS-Halos, Werk et al. 2013) to determine the importance of star formation history (SFH) and supermassive black hole (SMBH). We find SFH does not play a key role, but instead SMBH feedback is vital for enriching the circumgalactic medium of Milky Way-mass galaxies. St
+</p>
+	    <b>A Particular Appetite:</b><br>Major mergers in SPH simulations of Milky Way-mass galaxy preferentially drive fuel to the SMBH at their centers due to low angular momentum gas and merger dynamics.
+	  </p>
+	  </article>
+
+	<!-- Here is the "Community" card. -->
+	<article id="community">
+	  <h2 class="major">Community</h2>
+	  <span class="image main">
+	    <img src="images/protostars.jpg" alt=""/>
+	    </span>
+	  <p>
+	    <b>Teaching:</b><br>
+	    <a href="images/protostars-newsletter.pdf">UW Summer Youth Programs STEM Challenge: Protostars</a><br>
+	    <a href="http://depts.washington.edu/premap/seminar/cohort-16-2020-seminar/"> Pre-Major in Astronomy Program (Pre-MAP </a> Instructor<br>
+	    </p>
+	  <p>
+	    <b>Outreach:</b>
+	    Astronomy on Tap Seattle, Lead Organizer (2016-2021)
+	    </p>
+	  <p>
+	    <b>Equity & Inclusion:</b><br>
+	    2021<br>
+	    <a href="https://inclusivescicomm.org/"> Inclusive SciComm Community Cohort </a><br>
+	    NSF Alliances for Graduate Education and the Professoriate (AGEP) Research Scholarships University Alliance (RUA) Cohort<br>
+	    Anti-Racist Pedigogy Reading Group - Reading List<br>
+	    <i>2020</i><br>
+	    N-Body Shop Code of Conduct Co-Creator<br>
+	    
+	    
+	    </p>
+	  </article>
+
+	<!-- Here is a the "Contact" card. -->
+	<article id="contact">
+	  <h2 class="major">Contact</h2>
+	  <p> 
+	    <b>Email:</b>
+	    nsanchez@carnegiescience.edu
+	    </p>
+
+	  <!-- Here are the fancy icons that link to your social media.
+	       These icons are rendered using Font Awesome fonts, and you can find more icons
+	       here: https://fontawesome.com/icons
+	       -->
+	  <ul class="icons">
+	    <!-- The Twitter icon -->
+	    <li>
+	      <!-- Note that you need to change the link to point to your page.
+		   Replace "#" with your Twitter profile page.
+		   -->
+	      <a href="https://twitter.com/the_n_nicole" class="icon fa-twitter">
+		<span class="label">Twitter</span>
+		</a>
+	      </li>
+	    <!-- The Facebook icon -->
+	    <li>
+	      <a href="https://www.facebook.com/nnicolesanchez" class="icon fa-facebook">
+		<span class="label">Facebook</span>
+		</a>
+	      </li>
+	    <!-- The Instagram icon -->
+	    <li>
+	      <a href="https://instagram.com/the_n_nicole" class="icon fa-instagram">
+		<span class="label">Instagram</span>
+		</a>
+	      </li>
+	    <!-- The GitHub icon -->
+	    <li>
+	      <a href="https://instagram.com/the_n_nicole" class="icon fa-github">
+		<span class="label">GitHub</span>
+		</a>
+	      </li>
+	    <!-- We can add a new icon by searching on the Font Awesome website
+		 for the correct class name and inserting it as a new list item.
+		 We found "envelope" here: https://fontawesome.com/icons/envelope
+		 -->
+	    <!-- <li>
+		 <a href="#" class="icon fa-envelope">
+		   <span class="label">Email</span>
+		   </a>
+		 </li> -->
+	    </ul>
+	  </article>
 	</div>
 
-	<div class="wrap">
+      <!-- This is the footer that appears at the bottom of the page -->
+      <footer id="footer">
+	<!-- You can change "Untitled" to your name to show everyone that
+	     this is your work.
+	     -->
+	<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+	</footer>
 
-		<h1>N. Nicole Sanchez</h1>
-		<p>Theoretical and Computational Astrophysicist.</p>
+      </div>
 
-		{% include socials.html %}
+    <!--This is the background image of the site.
+	All configuration of the background is done with CSS.
+	Look in the file assets/css/main.css and search for "#bg" to
+	see how this element is styled. Look for comments pointing 
+	to where you can set a new background image.
+	-->
+    <div id="bg"></div>
 
-	</div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-</section>
+    </body>
+</html>
 
-<section class="listing">
 
-	<div class="wrap">
-
-		{% for project in site.projects reversed %}
-
-		<article class="post">
-
-			<div class="post__image-wrap">
-				<div class="post__image" style="background-image: url({{ project.featured_image | relative_url }})"></div>
-			</div>
-
-			<div class="post__content-wrap">
-				<div class="post__content">
-					<h2 class="post__title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
-					<p class="post__subtitle">{{ project.subtitle }}</p>
-					<p class="post__description">{{ project.description }}</p>
-				</div>
-			</div>
-
-		</article>
-
-		{% endfor %}
-
-	</div>
-
-</section>
